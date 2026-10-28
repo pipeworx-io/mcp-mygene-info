@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-mygene-info",
-  "version": "0.1.2",
-  "description": "MyGene.info MCP.",
+  "version": "0.1.3",
+  "description": "MyGene.info MCP. Docs: https://docs.mygene.info/en/latest/",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-ab5358973d99427eb9c8c1e8f924461026e3b15378b97466772468a657780b60",
-    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
+    "sourceHash": "v1-0e610e72163e6d2b9d4aa793f56be17168296c4e153be369b0e944acf9e31637",
+    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
   }
 }
