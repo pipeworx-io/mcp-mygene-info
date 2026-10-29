@@ -1,0 +1,106 @@
+[
+  {
+    "name": "query",
+    "description": "Full-text gene query.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "e.g. \"BRCA1\", \"symbol:TP53 AND taxid:9606\""
+        },
+        "species": {
+          "type": "string",
+          "description": "NCBI taxonomy id or common name (default human)."
+        },
+        "fields": {
+          "type": "string",
+          "description": "Comma-sep return fields."
+        },
+        "size": {
+          "type": "number",
+          "description": "1-1000 (default 10)."
+        },
+        "sort": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "gene",
+    "description": "Annotations for a single gene id.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "gene_id": {
+          "type": "string",
+          "description": "Entrez id (\"7157\") or Ensembl id (\"ENSG00000141510\")."
+        },
+        "fields": {
+          "type": "string"
+        },
+        "species": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "gene_id"
+      ]
+    }
+  },
+  {
+    "name": "query_many",
+    "description": "Batch-resolve a list of gene symbols, Entrez IDs, or Ensembl IDs (up to 1000) via a single POST to mygene.info, searching across specified scopes (default: symbol) and returning annotations for each matched gene.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scopes": {
+          "type": "string",
+          "description": "Comma-sep fields to search in (default symbol)."
+        },
+        "species": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ids"
+      ]
+    }
+  },
+  {
+    "name": "metadata",
+    "description": "Release / source metadata.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "taxonomy",
+    "description": "Species taxonomy info.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "species": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "species"
+      ]
+    }
+  }
+]
