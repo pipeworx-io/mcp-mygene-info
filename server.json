@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/mygene-info",
   "title": "Mygene Info",
   "description": "MyGene.info MCP. Docs: https://docs.mygene.info/en/latest/",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "websiteUrl": "https://pipeworx.io/packs/mygene-info",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-mygene-info",

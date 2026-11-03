@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-mygene-info",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "MyGene.info MCP. Docs: https://docs.mygene.info/en/latest/",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "mygene-info",
     "gatewaySlug": "mygene-info",
-    "sourceHash": "v1-fb4f0b0caa8b20598b2c537585b1707add5930ab5565a4667b89569c5f47754f",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-2396c309535aa7fc600513a7acd05e04bb4cc4d75b118837dce442500ac532d0",
+    "sourceCommit": "56cf550e46fed96c0101a3877ccaf8357eecf016"
   }
 }
